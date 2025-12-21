@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small set of additional defaults to better match the provided design */
+:root{--accent:#A67C52}
+body{background:#FDFCF8}
+
+/* utility to approximate aspect-[16/10] used in App */
+.aspect-\\[16/10\\]{position:relative}
+.aspect-\\[16/10\\]::before{content:'';display:block;padding-top:62.5%}
+.aspect-\\[16/10\\] > *{position:absolute;inset:0}

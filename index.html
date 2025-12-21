@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ascension Ranch</title>
+    <meta name="description" content="Ascension Ranch — a place for renewal and connection." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ascension Ranch</title>
+    <meta name="description" content="Ascension Ranch — a place for renewal and connection." />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title">Ascension Ranch</h1>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#visit">Visit</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Welcome to Ascension Ranch</h2>
+          <p>A place to renew, reconnect, and reawaken.</p>
+          <p><a class="cta" href="#visit">Plan a Visit</a></p>
+        </div>
+      </section>
+
+      <section id="about" class="container content">
+        <h3>About Us</h3>
+        <p>Ascension Ranch is committed to offering restorative experiences in nature. This starter site gives you a place to customize content before uploading to your host.</p>
+      </section>
+
+      <section id="programs" class="container content">
+        <h3>Programs</h3>
+        <ul>
+          <li>Retreats & Workshops</li>
+          <li>Guided Experiences</li>
+          <li>Community Events</li>
+        </ul>
+      </section>
+
+      <section id="visit" class="container content">
+        <h3>Plan a Visit</h3>
+        <p>Details about booking, directions, and accommodations go here.</p>
+      </section>
+
+      <section id="contact" class="container content">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:info@yourdomain.example">info@yourdomain.example</a></p>
+        <p>If you need a contact form, note that InfinityFree restricts server processes — use a third-party form provider (Formspree, Netlify Forms, etc.) or a PHP form that you test on their platform.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Ascension Ranch</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
