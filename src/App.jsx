@@ -117,9 +117,9 @@ const App = () => {
 
       {/* Hero: More Exciting & Atmospheric */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
+          <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=2000" 
+            src={`${import.meta.env.BASE_URL}images/home.jpg`} 
             className="w-full h-full object-cover brightness-[0.6] scale-105 animate-pulse-slow"
             alt="Ranch Sunset"
           />
