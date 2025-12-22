@@ -16,24 +16,27 @@ body{background:#FDFCF8}
 	.story-scroll {
 		height: calc(100vh - 0px);
 		overflow-y: auto;
-		scroll-snap-type: y mandatory;
+		scroll-snap-type: y proximity;
 		-webkit-overflow-scrolling: touch;
+		scroll-behavior: smooth;
+		padding-block: 1.25rem;
 	}
 
 	.story-section {
 		scroll-snap-align: start;
-		height: 100vh;
+		height: min(75vh, 100vh);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 4rem 1rem;
+		padding: 2rem 1rem;
+		margin-block: 0.75rem;
 	}
 }
 
 .story-section .content {
 	max-width: 54rem;
-	transition: transform 700ms cubic-bezier(.2,.9,.2,1), opacity 700ms ease;
-	transform: translateY(20px) scale(0.995);
+	transition: transform 500ms cubic-bezier(.2,.9,.2,1), opacity 500ms ease;
+	transform: translateY(10px) scale(0.998);
 	opacity: 0;
 }
 .story-section.is-active .content {

@@ -27,6 +27,7 @@ const Story = () => {
     setOg('og:image', `${import.meta.env.BASE_URL}images/home.jpg`)
 
     // IntersectionObserver: add .is-active to the section when it is centered
+    // use a lower threshold and a small rootMargin to trigger earlier and make transitions feel smoother
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -35,7 +36,7 @@ const Story = () => {
           entry.target.classList.remove('is-active')
         }
       })
-    }, { threshold: 0.6 })
+    }, { threshold: 0.5, rootMargin: '-10% 0px -10% 0px' })
 
     const sections = Array.from(document.querySelectorAll('.story-section'))
     sections.forEach((s) => observer.observe(s))
@@ -134,6 +135,7 @@ const Story = () => {
           </div>
         </section>
       </main>
+    </div>
   )
 }
 
