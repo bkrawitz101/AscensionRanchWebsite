@@ -70,21 +70,21 @@ const App = () => {
       tag: 'Perched',
       desc: `High above the meadow on a gently sloping ridge, Eagle's Nest offers panoramic views across the property and the nearby lake. A private platform and sheltered fire circle make evenings unforgettable. Ideal for couples or solo travelers seeking quiet and wide skies.`,
       price: 'From $85/night',
-      img: `${import.meta.env.BASE_URL}images/eagles-nest.jpg`
+      img: `${import.meta.env.BASE_URL}images/eaglesnest1.jpg`
     },
     {
       name: 'Hold Your Horses',
       tag: 'Hands-On',
       desc: `A spacious, horse-adjacent site designed for guests who want to be close to the herd. Mornings are filled with soft nickers and the option to join light stewardship tasks. Perfect for families and equine lovers wanting an immersive stay.`,
       price: 'From $95/night',
-      img: `${import.meta.env.BASE_URL}images/hold-your-horses.jpg`
+      img: `${import.meta.env.BASE_URL}images/holdyourhorses1.jpg`
     },
     {
       name: 'Meadow View Equestrian',
       tag: 'Scenic',
       desc: `Nestled on the edge of a wildflower meadow, this site blends comfortable camping with open pasture views. Wide sightlines and easy access to walking trails make it a peaceful base for morning coffee and sunset watching.`,
       price: 'From $72/night',
-      img: `${import.meta.env.BASE_URL}images/meadow-view.jpg`
+      img: `${import.meta.env.BASE_URL}images/meadowview1.jpg`
     }
   ];
 
