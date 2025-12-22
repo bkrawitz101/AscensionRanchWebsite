@@ -37,6 +37,7 @@ const App = () => {
     { name: 'Stays', href: '#stays' },
     { name: 'Experiences', href: '#experiences' },
     { name: 'The Animals', href: '#animals' },
+    { name: 'Our Story', href: `${import.meta.env.BASE_URL}story` },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -139,10 +140,24 @@ const App = () => {
             <button className="bg-white text-[#2D2926] px-10 py-5 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-[#E2D1C3] transition-all shadow-xl">
               Explore Stays
             </button>
-            <button className="border-2 border-white text-white px-10 py-5 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-white/10 transition-all backdrop-blur-sm">
+            <a href={`${import.meta.env.BASE_URL}story`} className="border-2 border-white text-white px-10 py-5 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-white/10 transition-all backdrop-blur-sm inline-block">
               Our Story
-            </button>
+            </a>
           </div>
+        </div>
+      </section>
+
+      {/* Story Teaser */}
+      <section id="story-teaser" className="py-12 bg-[#FDFCF8]">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h3 className="text-2xl font-bold mb-4">The Story of Ascension Ranch</h3>
+          <p className="max-w-2xl mx-auto text-[#5C5752] mb-6">
+            Ascension Ranch was born from a calling — a return to living in reciprocity with the land. Founder Fawad Atebar turned that calling into a working
+            regenerative ranch where people and place heal together.
+          </p>
+          <a href={`${import.meta.env.BASE_URL}story`} className="inline-block bg-[#A67C52] text-white px-8 py-3 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-[#8B6541] transition-all">
+            Read the full story
+          </a>
         </div>
       </section>
 
@@ -252,7 +267,7 @@ const App = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
-              { name: 'Laila', role: 'Guardian', img: 'https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600' },
+              { name: 'Laila', role: 'Guardian', img: `${import.meta.env.BASE_URL}images/laila.jpg` },
               { name: 'The Mustangs', role: 'Grazers', img: 'https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&q=80&w=600' },
               { name: 'Cairo', role: 'Protector', img: `${import.meta.env.BASE_URL}images/cairo.jpg` }
             ].map((animal, idx) => (
