@@ -274,22 +274,25 @@ const App = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {stays.map((stay, idx) => (
             <div key={idx} className="group cursor-pointer">
-              <div className="relative aspect-[16/10] overflow-hidden rounded-sm mb-6">
-                <img src={stay.images[galleryIdx[idx]]} alt={stay.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div className="absolute inset-y-0 left-2 flex items-center z-20">
-                  <button onClick={() => prevImage(idx)} type="button" className="bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md hover:bg-white">
-                    <ChevronLeft className="w-4 h-4" />
-                  </button>
+              <a href={`${import.meta.env.BASE_URL}stay/${stay.slug}`} className="relative block">
+                <div className="relative aspect-[16/10] overflow-hidden rounded-sm mb-6">
+                  <img src={stay.images[galleryIdx[idx]]} alt={stay.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-y-0 left-2 flex items-center z-20">
+                    <button onClick={(e) => { e.preventDefault(); prevImage(idx); }} type="button" className="bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md hover:bg-white">
+                      <ChevronLeft className="w-4 h-4" />
+                    </button>
+                  </div>
+                  <div className="absolute inset-y-0 right-2 flex items-center z-20">
+                    <button onClick={(e) => { e.preventDefault(); nextImage(idx); }} type="button" className="bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md hover:bg-white">
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  </div>
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">
+                    {stay.tag}
+                  </div>
                 </div>
-                <div className="absolute inset-y-0 right-2 flex items-center z-20">
-                  <button onClick={() => nextImage(idx)} type="button" className="bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md hover:bg-white">
-                    <ChevronRight className="w-4 h-4" />
-                  </button>
-                </div>
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">
-                  {stay.tag}
-                </div>
-              </div>
+              </a>
+              
               <div className="flex justify-between items-start">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">{stay.name}</h3>
