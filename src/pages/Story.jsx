@@ -37,38 +37,57 @@ const Story = () => {
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-6 py-12 lg:py-20 leading-relaxed text-lg text-[#5C5752]">
-        <p>Ascension Ranch was born from a calling.</p>
+      <main className="max-w-3xl mx-auto px-6 py-12 lg:py-20 leading-relaxed text-lg text-[#5C5752]">
+        <p className="text-lg font-semibold mb-4">Ascension Ranch was born from a calling.</p>
 
         <p>
-          Its founder, Fawad Atebar, has lived many lives in one—traveling through more than 30 countries, immersing himself in diverse cultures, and experiencing the pulse of modern city life. Along that journey came a quiet realization: somewhere along the way, humanity began to drift from its roots—from the rhythms of the Earth, from reciprocity, from living in harmony with the land that sustains us.
+          Its founder, Fawad Atebar, has lived many lives in one — traveling through more than 30 countries, immersing himself in diverse cultures, and experiencing the pulse of modern city life.
         </p>
 
         <p>
-          Ascension Ranch emerged as a response to that knowing.
+          Along that journey came a quiet realization: somewhere along the way, humanity began to drift from its roots — from the rhythms of the Earth, from reciprocity, from living in harmony with the land that sustains us.
+        </p>
+
+        <hr className="my-8 border-[#E9E3DA]" />
+
+        <p>
+          Ascension Ranch emerged as a response to that knowing. This land exists as an invitation — to return. To remember what it feels like to live symbiotically with Mother Earth, rather than in opposition to her.
         </p>
 
         <p>
-          This land exists as an invitation—to return. To remember what it feels like to live symbiotically with Mother Earth, rather than in opposition to her. To experience a way of life where systems support one another, where waste becomes nourishment, and where stewardship replaces extraction.
+          To experience a way of life where systems support one another, where waste becomes nourishment, and where stewardship replaces extraction.
+        </p>
+
+        <blockquote className="my-6 border-l-4 border-[#A67C52] pl-4 italic text-[#2D2926]">“A place to remember how to belong to the land.”</blockquote>
+
+        <p>
+          At its heart, Ascension Ranch is a working regenerative ranch. Horses, cows, sheep, goats, chickens, and ducks are not just residents here — they are partners in a living, circular ecosystem.
         </p>
 
         <p>
-          At its heart, Ascension Ranch is a working regenerative ranch. Horses, cows, sheep, goats, chickens, and ducks are not just residents here—they are partners in a living, circular ecosystem. Together, they help regenerate the land, build soil health, and create local sustainability through time-tested agricultural practices rooted in respect and care.
+          Together, they help regenerate the land, build soil health, and create local sustainability through time-tested agricultural practices rooted in respect and care.
+        </p>
+
+        <hr className="my-8 border-[#E9E3DA]" />
+
+        <p>
+          Through agritourism, the ranch opens its gates to the wider community — offering a glimpse into a way of life that many have forgotten, yet deeply long for.
         </p>
 
         <p>
-          Through agritourism, the ranch opens its gates to the wider community—offering a glimpse into a way of life that many have forgotten, yet deeply long for. Guests are invited not just to observe, but to feel what it means to live in relationship with the land.
+          Guests are invited not just to observe, but to feel what it means to live in relationship with the land.
         </p>
 
         <p>
-          Beyond agriculture, Ascension Ranch is also a place of innovation and healing. It serves as a living laboratory for renewable energy systems, and as a sanctuary for multiple wellness modalities—where restoration happens not only in the body, but in the spirit.
+          Beyond agriculture, Ascension Ranch is also a place of innovation and healing. It serves as a living laboratory for renewable energy systems, and as a sanctuary for multiple wellness modalities — where restoration happens not only in the body, but in the spirit.
         </p>
 
-        <p className="font-semibold">This is more than a campground.
-        More than a destination.</p>
+        <hr className="my-8 border-[#E9E3DA]" />
+
+        <p className="font-semibold">This is more than a campground. More than a destination.</p>
 
         <p>
-          Ascension Ranch is a living embodiment of regeneration—a place where ancient wisdom meets modern intention, where land and people rise together, and where the seeds of a more harmonious future are quietly, steadily taking root.
+          Ascension Ranch is a living embodiment of regeneration — a place where ancient wisdom meets modern intention, where land and people rise together, and where the seeds of a more harmonious future are quietly, steadily taking root.
         </p>
 
         <div className="mt-8">
