@@ -20,6 +20,8 @@ import {
   Sprout
 } from 'lucide-react';
 
+// ResponsiveImage removed; using static images for now
+
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
