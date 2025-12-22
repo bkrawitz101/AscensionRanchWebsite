@@ -4,12 +4,19 @@ on:
   push:
     branches: [ main ]
 
+# Ensure the workflow has the permissions to create/update the gh-pages branch
+permissions:
+  contents: read
+  pages: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js
         uses: actions/setup-node@v4
