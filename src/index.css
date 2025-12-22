@@ -65,6 +65,35 @@ body{background:#FDFCF8}
 }
 .story-section .content { z-index: 2; }
 
+/* panel for text to improve readability over busy backgrounds */
+.story-section .content {
+	max-width: 54rem;
+	z-index: 3;
+	display: block;
+}
+
+.story-section .content .panel {
+	background: rgba(255,255,255,0.88);
+	color: #2D2926;
+	padding: 1.25rem 1.5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 12px 30px rgba(16,16,16,0.12);
+	backdrop-filter: blur(6px);
+}
+
+.story-section .content p { font-size: 1.0625rem; line-height: 1.7; }
+.story-section .content .lead { font-size: 1.25rem; font-weight: 700; }
+
+@media (min-width: 768px) {
+	.story-section .content { width: 58%; margin-left: 6%; }
+	.story-section .content .panel { padding: 2rem 2.25rem; }
+}
+
+@media (max-width: 767px) {
+	.story-section .content .panel { background: rgba(255,255,255,0.96); padding: 0.9rem 1rem; }
+	.story-section .bg-layer { transform: scale(1.06); }
+}
+
 /* smaller screens: stack nicely, no snap enforced */
 @media (max-width: 767px) {
 	.story-section { padding: 2rem 1rem; }
