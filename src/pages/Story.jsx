@@ -60,12 +60,16 @@ const Story = () => {
       <main className="story-scroll">
         {/* Each section becomes a hero-style full-screen block on larger screens */}
         <section className="story-section">
+          <div className="bg-layer" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/home.jpg)` }} />
+          <div className="overlay" />
           <div className="content text-center px-6">
             <p className="text-lg font-semibold">Ascension Ranch was born from a calling.</p>
           </div>
         </section>
 
         <section className="story-section">
+          <div className="bg-layer" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/laila.jpg)` }} />
+          <div className="overlay" />
           <div className="content px-6">
             <p>
               Its founder, Fawad Atebar, has lived many lives in one — traveling through more than 30 countries, immersing himself in diverse cultures, and experiencing the pulse of modern city life.
@@ -74,6 +78,8 @@ const Story = () => {
         </section>
 
         <section className="story-section">
+          <div className="bg-layer" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/cairo.jpg)` }} />
+          <div className="overlay" />
           <div className="content px-6">
             <p>
               Along that journey came a quiet realization: somewhere along the way, humanity began to drift from its roots — from the rhythms of the Earth, from reciprocity, from living in harmony with the land that sustains us.
@@ -82,6 +88,8 @@ const Story = () => {
         </section>
 
         <section className="story-section">
+          <div className="bg-layer" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/home.jpg)` }} />
+          <div className="overlay" />
           <div className="content px-6">
             <p>
               Ascension Ranch emerged as a response to that knowing. This land exists as an invitation — to return. To remember what it feels like to live symbiotically with Mother Earth, rather than in opposition to her.
@@ -93,6 +101,8 @@ const Story = () => {
         </section>
 
         <section className="story-section">
+          <div className="bg-layer" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/cairo.jpg)` }} />
+          <div className="overlay" />
           <div className="content px-6">
             <blockquote className="my-6 border-l-4 border-[#A67C52] pl-4 italic text-[#2D2926]">“A place to remember how to belong to the land.”</blockquote>
             <p>
@@ -105,6 +115,8 @@ const Story = () => {
         </section>
 
         <section className="story-section">
+          <div className="bg-layer" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/home.jpg)` }} />
+          <div className="overlay" />
           <div className="content px-6">
             <p>
               Through agritourism, the ranch opens its gates to the wider community — offering a glimpse into a way of life that many have forgotten, yet deeply long for.
@@ -116,6 +128,8 @@ const Story = () => {
         </section>
 
         <section className="story-section">
+          <div className="bg-layer" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/cairo.jpg)` }} />
+          <div className="overlay" />
           <div className="content px-6">
             <p>
               Beyond agriculture, Ascension Ranch is also a place of innovation and healing. It serves as a living laboratory for renewable energy systems, and as a sanctuary for multiple wellness modalities — where restoration happens not only in the body, but in the spirit.
@@ -124,6 +138,8 @@ const Story = () => {
         </section>
 
         <section className="story-section">
+          <div className="bg-layer" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/home.jpg)` }} />
+          <div className="overlay" />
           <div className="content text-center px-6">
             <p className="font-semibold">This is more than a campground. More than a destination.</p>
             <p className="mt-4">

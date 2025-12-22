@@ -30,6 +30,8 @@ body{background:#FDFCF8}
 		justify-content: center;
 		padding: 2rem 1rem;
 		margin-block: 0.75rem;
+		position: relative;
+		overflow: hidden;
 	}
 }
 
@@ -43,6 +45,25 @@ body{background:#FDFCF8}
 	transform: translateY(0) scale(1);
 	opacity: 1;
 }
+
+/* background layer for slide-like sections */
+.story-section .bg-layer {
+	position: absolute;
+	inset: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transform: scale(1.03);
+	filter: brightness(0.6) saturate(0.95);
+	z-index: 0;
+}
+.story-section .overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(180deg, rgba(13,13,13,0.35), rgba(13,13,13,0.15) 40%, rgba(255,255,255,0.0) 70%);
+	z-index: 1;
+}
+.story-section .content { z-index: 2; }
 
 /* smaller screens: stack nicely, no snap enforced */
 @media (max-width: 767px) {
