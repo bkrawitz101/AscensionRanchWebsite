@@ -254,7 +254,7 @@ const App = () => {
             {[
               { name: 'Laila', role: 'Guardian', img: 'https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600' },
               { name: 'The Mustangs', role: 'Grazers', img: 'https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&q=80&w=600' },
-              { name: 'Cairo', role: 'Protector', img: 'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=600' }
+              { name: 'Cairo', role: 'Protector', img: `${import.meta.env.BASE_URL}images/cairo.jpg` }
             ].map((animal, idx) => (
               <div key={idx} className="group">
                 <div className="aspect-square rounded-full overflow-hidden mb-6 border-4 border-white shadow-xl group-hover:border-[#A67C52] transition-all">
