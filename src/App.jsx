@@ -65,26 +65,19 @@ const App = () => {
   ];
 
   const stays = [
-    {
-      name: `Eagle's Nest`,
-      tag: 'Perched',
-      desc: `High above the meadow on a gently sloping ridge, Eagle's Nest offers panoramic views across the property and the nearby lake. A private platform and sheltered fire circle make evenings unforgettable. Ideal for couples or solo travelers seeking quiet and wide skies.`,
-      price: 'From $85/night',
-      img: `${import.meta.env.BASE_URL}images/eaglesnest1.jpg`
+    { 
+      name: 'The Horse Pasture Retreat', 
+      tag: 'Immersive',
+      desc: 'A premium site located directly within the grazing lands. Wake up to the sound of horses nearby.',
+      price: 'From $65/night',
+      img: 'https://images.unsplash.com/photo-1533910534207-90f31029a78e?auto=format&fit=crop&q=80&w=800'
     },
-    {
-      name: 'Hold Your Horses',
-      tag: 'Hands-On',
-      desc: `A spacious, horse-adjacent site designed for guests who want to be close to the herd. Mornings are filled with soft nickers and the option to join light stewardship tasks. Perfect for families and equine lovers wanting an immersive stay.`,
-      price: 'From $95/night',
-      img: `${import.meta.env.BASE_URL}images/holdyourhorses1.jpg`
-    },
-    {
-      name: 'Meadow View Equestrian',
-      tag: 'Scenic',
-      desc: `Nestled on the edge of a wildflower meadow, this site blends comfortable camping with open pasture views. Wide sightlines and easy access to walking trails make it a peaceful base for morning coffee and sunset watching.`,
-      price: 'From $72/night',
-      img: `${import.meta.env.BASE_URL}images/meadowview1.jpg`
+    { 
+      name: 'Oak Savannah Hideaway', 
+      tag: 'Secluded',
+      desc: 'Tucked away in a private grove of ancient oaks. Perfect for deep rest and sunset watching.',
+      price: 'From $75/night',
+      img: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&q=80&w=800'
     }
   ];
 
