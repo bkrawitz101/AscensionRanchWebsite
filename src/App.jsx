@@ -17,12 +17,8 @@ import {
   Camera,
   Coffee,
   Users,
-  Sprout,
-  ChevronLeft,
-  ChevronRight
+  Sprout
 } from 'lucide-react';
-
-import stays from './data/stays';
 
 // ResponsiveImage removed; using static images for now
 
@@ -68,25 +64,29 @@ const App = () => {
     }
   ];
 
-  
-
-  const [galleryIdx, setGalleryIdx] = useState(() => Array(stays.length).fill(0));
-
-  const prevImage = (i) => {
-    setGalleryIdx((prev) => {
-      const next = [...prev];
-      next[i] = (next[i] - 1 + stays[i].images.length) % stays[i].images.length;
-      return next;
-    });
-  };
-
-  const nextImage = (i) => {
-    setGalleryIdx((prev) => {
-      const next = [...prev];
-      next[i] = (next[i] + 1) % stays[i].images.length;
-      return next;
-    });
-  };
+  const stays = [
+    {
+      name: `Eagle's Nest`,
+      tag: 'Perched',
+      desc: `High above the meadow on a gently sloping ridge, Eagle's Nest offers panoramic views across the property and the nearby lake. A private platform and sheltered fire circle make evenings unforgettable. Ideal for couples or solo travelers seeking quiet and wide skies.`,
+      price: 'From $85/night',
+      img: `${import.meta.env.BASE_URL}images/eaglesnest1.jpg`
+    },
+    {
+      name: 'Hold Your Horses',
+      tag: 'Hands-On',
+      desc: `A spacious, horse-adjacent site designed for guests who want to be close to the herd. Mornings are filled with soft nickers and the option to join light stewardship tasks. Perfect for families and equine lovers wanting an immersive stay.`,
+      price: 'From $95/night',
+      img: `${import.meta.env.BASE_URL}images/holdyourhorses1.jpg`
+    },
+    {
+      name: 'Meadow View Equestrian',
+      tag: 'Scenic',
+      desc: `Nestled on the edge of a wildflower meadow, this site blends comfortable camping with open pasture views. Wide sightlines and easy access to walking trails make it a peaceful base for morning coffee and sunset watching.`,
+      price: 'From $72/night',
+      img: `${import.meta.env.BASE_URL}images/meadowview1.jpg`
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-[#FDFCF8] font-serif text-[#2D2926] selection:bg-[#E2D1C3]">
@@ -244,24 +244,13 @@ const App = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {stays.map((stay, idx) => (
-            <a key={stay.slug || idx} href={`${import.meta.env.BASE_URL}stay/${stay.slug}`} className="group block cursor-pointer">
+            <div key={idx} className="group cursor-pointer">
               <div className="relative aspect-[16/10] overflow-hidden rounded-sm mb-6">
-                <img src={stay.images[galleryIdx[idx]]} alt={stay.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div className="absolute inset-y-0 left-2 flex items-center z-20">
-                  <button onClick={(e) => { e.preventDefault(); prevImage(idx); }} type="button" className="bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md hover:bg-white">
-                    <ChevronLeft className="w-4 h-4" />
-                  </button>
-                </div>
-                <div className="absolute inset-y-0 right-2 flex items-center z-20">
-                  <button onClick={(e) => { e.preventDefault(); nextImage(idx); }} type="button" className="bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md hover:bg-white">
-                    <ChevronRight className="w-4 h-4" />
-                  </button>
-                </div>
+                <img src={stay.img} alt={stay.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">
                   {stay.tag}
                 </div>
               </div>
-
               <div className="flex justify-between items-start">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">{stay.name}</h3>
@@ -272,7 +261,7 @@ const App = () => {
                   <p className="text-[10px] uppercase tracking-widest opacity-40">Per Night</p>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </section>
